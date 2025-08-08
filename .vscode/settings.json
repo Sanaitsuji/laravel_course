@@ -1,0 +1,7 @@
+{
+    "editor.suggest.showTypeParameters": true,
+    "php.inlayHints.parameters.enabled": false,
+    "php.inlayHints.parameters.byReference": false,
+    "php.inlayHints.types.lambdaParameter": false,
+    "php.inlayHints.types.return": false
+}
