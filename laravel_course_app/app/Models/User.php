@@ -45,4 +45,21 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    function address() {
+        return $this->hasOne(Address::class);
+    }
+
+    function addresses() {
+        return $this->hasMany(Address::class, 'user_id', 'id');
+    }
+
+    function posts() {
+        return $this->hasMany(Post::class, 'user_id', 'id');
+    }
+
+    function image() {
+        return $this->morphOne(Image::class, 'imageable');
+    }
+
 }
